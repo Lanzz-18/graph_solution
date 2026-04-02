@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if ! command -v go &> /dev/null; then
+    echo "Go is required. Install it from: https://golang.org/dl/"
+    exit 1
+fi
+
+if [ ! -f "./graph_solution_bin" ]; then
+    go build -o graph_solution_bin main.go
+fi
+
+./graph_solution_bin "$1"
