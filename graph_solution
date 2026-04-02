@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! command -v go &> /dev/null; then
-    echo "Go is required. Install it from: https://golang.org/dl/"
+    echo "Go is required. Download setup and install from: https://golang.org/dl/"
     exit 1
 fi
 
